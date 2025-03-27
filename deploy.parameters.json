@@ -3,16 +3,16 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "appServicePlanName": {
-      "value": "MyMvcAppServicePlan"
+      "value": "MyMvcAppJmoriServicePlan"
     },
     "webAppName": {
-      "value": "MyMvcApp"
+      "value": "MyMvcAppJmori"
     },
     "sku": {
       "value": "F1"
     },
     "location": {
-      "value": "eastus"
+      "value": "westus"
     }
   }
 }

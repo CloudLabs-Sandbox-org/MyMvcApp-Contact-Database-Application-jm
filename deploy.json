@@ -5,13 +5,13 @@
     "appServicePlanName": {
       "type": "string",
       "metadata": {
-        "description": "Nombre del App Service Plan."
+        "description": "MyMvcAppJmori del App Service Plan."
       }
     },
     "webAppName": {
       "type": "string",
       "metadata": {
-        "description": "Nombre de la aplicación web."
+        "description": "MyMvcAppJmori de la aplicación web."
       }
     },
     "sku": {
@@ -36,7 +36,7 @@
       "location": "[parameters('location')]",
       "sku": {
         "name": "[parameters('sku')]",
-        "tier": "[if(contains(parameters('sku'), 'F'), 'Free', 'Basic')]",
+        "tier": "[if(or(equals(parameters('sku'), 'F1'), equals(parameters('sku'), 'Free')), 'Free', 'Basic')]",
         "size": "[parameters('sku')]",
         "capacity": 1
       },
