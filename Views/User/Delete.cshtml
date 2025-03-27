@@ -1,3 +1,4 @@
+
 @model MyMvcApp.Models.User
 
 @{
@@ -29,11 +30,8 @@
 
     </dl>
 
-    @using (Html.BeginForm("Delete", "User", FormMethod.Post)) {
+    @using (Html.BeginForm()) {
         @Html.AntiForgeryToken()
-        
-        @* Campo oculto para enviar el Id del usuario *@
-        @Html.HiddenFor(model => model.Id)
 
         <div class="form-actions no-color">
             <input type="submit" value="Delete" class="btn btn-default" /> |
