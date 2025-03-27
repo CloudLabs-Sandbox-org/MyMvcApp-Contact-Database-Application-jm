@@ -4,7 +4,6 @@ env:
   AZURE_WEBAPP_NAME: 'MyMvcApp'    # set this to the name of your Azure Web App
   AZURE_WEBAPP_PACKAGE_PATH: './bin/Release/net8.0/publish'  # updated to match the publish output
   DOTNET_VERSION: '8.0'            # updated to match .NET 8.0
-  ACTIONS_ID_TOKEN_REQUEST_URL: ${{ env.ACTIONS_ID_TOKEN_REQUEST_URL }} # explicitly set the ID token request URL
 
 on:
   push:
